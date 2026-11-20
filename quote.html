@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en-IE"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Get a Free Quote - Monaghan Landscaping</title><meta name="description" content="Request a free, no-obligation quote for reseeding, tree planting, power washing or any garden work in Monaghan.">
+<title>Get a Free Quote - Monaghan Landscaping</title><meta name="description" content="Request a free, no-obligation quote for reseeding, tree planting, power washing or any garden work in Monaghan, Louth and Meath.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -43,6 +43,13 @@ a{color:inherit;text-decoration:none}
 .media img,.media svg{width:100%;height:100%;object-fit:cover;display:block}
 .media .cap{position:absolute;left:18px;bottom:16px;font-size:12px;font-weight:600;color:#fff;background:rgba(10,30,18,.55);backdrop-filter:blur(6px);padding:6px 10px;border-radius:6px}
 @media(max-width:700px){.media{aspect-ratio:4/3}}
+.sgrid2{position:relative;display:grid;gap:36px;align-items:center}@media(min-width:900px){.sgrid2{grid-template-columns:1.15fr .85fr}}
+.slead{font-size:17px;color:var(--dim);max-width:44ch;margin-top:20px}
+.pmedia{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:600px;width:100%;box-shadow:0 30px 60px -30px rgba(15,74,42,.35);background:#dfe6d8}
+.pmedia img{display:block}
+.pmedia .cap{position:absolute;left:16px;bottom:14px;font-size:12px;font-weight:600;color:#fff;background:rgba(10,30,18,.55);backdrop-filter:blur(6px);padding:6px 10px;border-radius:6px}
+@media(max-width:899px){.pmedia{aspect-ratio:4/3}}
+.media:has(img[alt^="Planting"]){aspect-ratio:16/9;max-width:900px;margin-left:auto;margin-right:auto}
 .trust{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:52px}
 .trust div{padding:22px 10px;text-align:center}.trust div+div{border-left:1px solid var(--line)}
 .trust b{display:block;font-family:'Inter Tight','Inter Display',sans-serif;font-size:clamp(20px,2.6vw,26px);letter-spacing:-.03em;line-height:1.1;color:var(--forest)}
@@ -77,6 +84,9 @@ section{padding:88px 0;scroll-margin-top:70px}
 .si{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
 .si b{font-family:'Inter Tight','Inter Display',sans-serif;font-size:18px;letter-spacing:-.02em;display:block;color:var(--ink)}
 .si span{font-size:14px;color:var(--dim)}
+.si.leaf{grid-column:1/-1;display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;padding:0;overflow:hidden;transition:border-color .2s}
+.si.leaf:hover{border-color:var(--forest)}.si.leaf img{width:150px;height:150px;object-fit:cover;object-position:50% 30%;display:block}
+.si.leaf .lt{padding:18px 18px 18px 0}.si.leaf .lt span{display:block}
 /* bento */
 .bento{display:grid;gap:14px}@media(min-width:860px){.bento{grid-template-columns:1.25fr 1fr}.bento .s1{grid-row:1/3}}
 .svc{position:relative;border-radius:22px;overflow:hidden;min-height:250px;background:#cfd8c8;color:#fff;display:flex;align-items:flex-end}
@@ -168,7 +178,7 @@ footer{background:var(--forest2);color:rgba(255,255,255,.72);padding:56px 0 64px
   <div>
     <div class="eyebrow">Free quote</div>
     <h1 class="h st">Tell us the job and we'll price it</h1>
-    <ul class="ilist" style="margin-top:28px"><li>Free and no obligation</li><li>Comes straight to us by email</li><li>We'll reply with a price or to arrange a look</li></ul>
+    <ul class="ilist" style="margin-top:28px"><li>Free and no obligation</li><li>Comes straight to us on WhatsApp</li><li>We'll reply with a price or to arrange a look</li></ul>
     <div class="qcard"><span class="demo">Review</span><p>"A short customer review sits here, beside the form, when people decide to get in touch."</p><span class="by">Customer name, Town</span></div>
   </div>
   <div class="form">
@@ -176,7 +186,7 @@ footer{background:var(--forest2);color:rgba(255,255,255,.72);padding:56px 0 64px
     <div class="field"><label for="service">Service required</label><select id="service" required><option value="">Choose a service...</option><option>Reseeding / new lawn</option><option>Tree planting</option><option>Power washing</option><option>Hedge cutting &amp; shaping</option><option>Pruning &amp; shrub shaping</option><option>Lawn care / grass cutting</option><option>Garden maintenance (regular)</option><option>Garden makeovers</option><option>Cutting &amp; garden clearance</option><option>Fencing</option><option>Painting</option><option>Patios &amp; paving</option><option>Mobile chipping &amp; shredding</option><option>Leaf clearing &amp; removal</option><option>Multiple services / not sure</option></select></div>
     <div class="row">
       <div class="field"><label for="town">Town / area</label><input type="text" id="town" placeholder="e.g. Castleblayney" required></div>
-      <div class="field"><label for="county">County</label><select id="county" required><option value="">Choose...</option><option>Monaghan</option><option>Cavan</option><option>Louth</option><option>Armagh</option><option>Fermanagh</option><option>Tyrone</option><option>Other</option></select></div>
+      <div class="field"><label for="county">County</label><select id="county" required><option value="">Choose...</option><option>Monaghan</option><option>Louth</option><option>Meath</option><option>Other</option></select></div>
     </div>
     <div class="row">
       <div class="field"><label for="eircode">Eircode (optional)</label><input type="text" id="eircode" placeholder="e.g. H18 XXXX"></div>
@@ -201,23 +211,25 @@ footer{background:var(--forest2);color:rgba(255,255,255,.72);padding:56px 0 64px
     <button type="submit" class="pill pill-d submit">Send my quote request</button>
     <p class="fnote" id="ferr" role="alert" style="color:#b3261e;display:none">Please fill in the service, your town, county, property type, size, timing, description, name, phone and tick the consent box.</p>
   </form>
-  <div class="confirm" id="confirmBox" role="status"><b>Thanks, your request is in.</b> <span id="confirmText"></span></div>
+  <div class="confirm" id="confirmBox" role="status"><b>Nearly done.</b> <span id="confirmText"></span></div>
   </div>
 </div></section>
 <script>
 var PRESET="";
 (function(){var s=new URLSearchParams(location.search).get('service')||PRESET;if(s){var sel=document.getElementById('service');for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===s)sel.selectedIndex=i;}}})();
-var WEB3FORMS_KEY="YOUR-ACCESS-KEY-HERE",BIZ_EMAIL="gabrielhand093@gmail.com",BIZ_NAME="Monaghan Landscaping";
+var BIZ_WHATSAPP="353870951030",WEB3FORMS_KEY="YOUR-ACCESS-KEY-HERE",BIZ_EMAIL="gabrielhand093@gmail.com",BIZ_NAME="Monaghan Landscaping";
 document.getElementById('qForm').addEventListener('submit',function(e){e.preventDefault();
 if(document.getElementById('company').value!==""){return;}
 var err=document.getElementById('ferr');if(!this.checkValidity()){err.style.display='block';this.reportValidity();return;}err.style.display='none';
 function v(id){return document.getElementById(id).value.trim();}
 var d={Service:v('service'),Area:v('town')+", Co. "+v('county'),Eircode:v('eircode')||"-",Property:v('ptype'),Size:v('size'),When:v('when'),Type:document.querySelector('input[name="freq"]:checked').value,Description:v('desc'),Name:v('name'),Phone:v('phone'),Email:v('email')||"-",Heard:v('heard')||"-",Page:location.pathname.split('/').pop()||"index.html"};
 var box=document.getElementById('confirmBox'),txt=document.getElementById('confirmText'),f=this;
+var msg="Quote request - "+BIZ_NAME+"\n\n";for(var k in d)msg+=k+": "+d[k]+"\n";
+window.open("https://wa.me/"+BIZ_WHATSAPP+"?text="+encodeURIComponent(msg),'_blank');
+txt.textContent="WhatsApp has opened with your details. Press send to finish, and add photos of the job in the chat if you have them.";box.classList.add('show');
 if(WEB3FORMS_KEY!=="YOUR-ACCESS-KEY-HERE"){var p={access_key:WEB3FORMS_KEY,subject:"Quote request - "+d.Service+" - "+d.Area,from_name:BIZ_NAME+" website",botcheck:""};for(var k in d)p[k]=d[k];
-fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(p)}).then(function(r){return r.json();}).then(function(j){
- if(j.success){txt.textContent="We'll be in touch shortly about your "+d.Service.toLowerCase()+" job.";box.classList.add('show');f.reset();}else{throw 0;}}).catch(function(){txt.textContent="Something went wrong sending the form. Please email "+BIZ_EMAIL+" with the details instead.";box.classList.add('show');});
-}else{var body="";for(var k in d)body+=k+": "+d[k]+"\n";location.href="mailto:"+BIZ_EMAIL+"?subject="+encodeURIComponent("Quote request - "+d.Service)+"&body="+encodeURIComponent(body);}
+fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(p)}).catch(function(){});}
+f.reset();
 });
 </script>
 <section><div class="wrap">
@@ -231,7 +243,7 @@ fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":
   <h2 class="h" style="font-size:24px;color:var(--forest)">Privacy notice</h2>
   <h3>What we collect</h3><p>Your name, phone number, email if given, location and the details of the job you need done.</p>
   <h3>Why</h3><p>Only to reply to your quote request and, if you go ahead, to carry out the work.</p>
-  <h3>Who sees it</h3><p>Only Monaghan Landscaping. It is never sold or passed on for marketing. Form submissions are delivered by email through Web3Forms.</p>
+  <h3>Who sees it</h3><p>Only Monaghan Landscaping. It is never sold or passed on for marketing. Quote requests are sent to us on WhatsApp.</p>
   <h3>Your rights</h3><p>Under GDPR you can ask to see, correct or delete your data at any time by emailing us.</p>
   <h3>Cookies</h3><p>This site uses no tracking cookies or analytics.</p>
 </div></section>
@@ -239,7 +251,7 @@ fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":
 <footer><div class="wrap">
   <div class="fbig">Monaghan<br>Landscaping</div>
   <div class="fcols">
-    <div><b>Monaghan Landscaping</b>Reseeding, tree planting, power washing and garden work across Monaghan and surrounding areas.</div>
+    <div><b>Monaghan Landscaping</b>Reseeding, tree planting, power washing and garden work across Monaghan, Louth and Meath.</div>
     <div><b>Services</b><a href="reseeding.html">Reseeding &amp; new lawns</a><a href="tree-planting.html">Tree planting</a><a href="power-washing.html">Power washing</a><a href="services.html">All services</a></div>
     <div><b>Contact</b><a href="quote.html">Get a free quote</a><a href="mailto:gabrielhand093@gmail.com">gabrielhand093@gmail.com</a><a href="https://www.facebook.com/search/top?q=Monaghan%20Landscape" target="_blank" rel="noopener">Facebook</a><a href="quote.html#privacy">Privacy notice</a></div>
   </div>
